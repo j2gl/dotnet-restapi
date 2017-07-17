@@ -12,7 +12,7 @@ $ docker build -t dev/rest-api:0.1 .
 
 ```sh
 # Fix it to your own volume
-$ docker run -it --rm -p 5000:5000 --volume ~/projects/dotnet/src:/src --name rest-dotnet dev/rest-api:0.1
+$ docker run -it --rm -p 5000:5000 --volume ~/projects/dotnet/src:/app --name rest-dotnet dev/rest-api:0.1
 ```
 
 * -p 5000:5000 - port to share from host:container

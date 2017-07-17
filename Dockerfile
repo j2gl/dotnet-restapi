@@ -4,8 +4,8 @@ MAINTAINER j2gl
 
 EXPOSE 5000
 
-VOLUME /src
-WORKDIR /src
+VOLUME /app
+WORKDIR /app
 
 RUN echo "alias ll='ls -la --color'" >> /root/.bashrc
 
