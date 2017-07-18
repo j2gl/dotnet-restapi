@@ -6,13 +6,13 @@ Kickstart for dotnet core in docker.
 ## Create Image
 
 ```sh
-$ docker build -t dev/rest-api:0.1 .
+$ docker build -t dotnet/restapi:0.1 .
 ```
 ## RUN CONTAINER
 
 ```sh
 # Fix it to your own volume
-$ docker run -it --rm -p 5000:5000 --volume ~/projects/dotnet/src:/app --name rest-dotnet dev/rest-api:0.1
+$ docker run -it --rm -p 5000:5000 --volume ~/projects/dotnet-restapi/src:/app --name rest-dotnet dotnet/restapi:0.1
 ```
 
 * -p 5000:5000 - port to share from host:container
